@@ -1,19 +1,31 @@
 {
-  "name": "wandering-boat-61ec",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest",
-    "cf-typegen": "wrangler types"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.6.4",
-    "@cloudflare/workers-types": "^4.20250129.0",
-    "typescript": "^5.5.2",
-    "vitest": "2.1.8",
-    "wrangler": "^3.107.3"
-  }
+	"name": "wandering-boat-61ec",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.6.4",
+		"@cloudflare/workers-types": "^4.20250129.0",
+		"@types/bun": "^1.2.2",
+		"drizzle-kit": "^0.30.4",
+		"typescript": "^5.5.2",
+		"vitest": "2.1.8",
+		"wrangler": "^3.107.3"
+	},
+	"dependencies": {
+		"@hono/typebox-validator": "^0.3.2",
+		"@scalar/hono-api-reference": "^0.5.171",
+		"@sinclair/typebox": "^0.34.15",
+		"dotenv": "^16.4.7",
+		"drizzle-orm": "^0.39.1",
+		"drizzle-typebox": "^0.3.0",
+		"hono": "^4.6.20",
+		"hono-openapi": "^0.4.4"
+	}
 }
